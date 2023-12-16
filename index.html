@@ -12,6 +12,10 @@
         align-items: center;
         min-height: 100vh;
       }
+      #player-container {
+        width: 640px;
+        height: 390px;
+      }
     </style>
   </head>
   <body>
@@ -21,7 +25,9 @@
       <input type="text" id="id-input" />
       <button type="submit">Get video</button>
     </form>
-    <div id="player"></div>
+    <div id="player-container">
+      <div id="player"></div>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
