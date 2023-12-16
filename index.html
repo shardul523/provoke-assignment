@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Youtube Video Player</title>
+    <script defer src="https://www.youtube.com/iframe_api"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="idForm">
+      <label for="id-input">Enter the unlisted Youtube Id: </label>
+      <input type="text" id="id-input" />
+      <button type="submit">Get video</button>
+    </form>
+    <div id="player"></div>
+    <script src="index.js"></script>
+  </body>
+</html>
