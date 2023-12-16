@@ -29,7 +29,7 @@ console.log(document.getElementById("idForm"));
 
 idForm.addEventListener("submit", (e) => {
   e.preventDefault();
-  if (isAPILoaded) {
+  if (!player) {
     player = new YT.Player("player", {
       height: "390",
       width: "640",
@@ -42,5 +42,5 @@ idForm.addEventListener("submit", (e) => {
         onStateChange: onPlayerStateChange,
       },
     });
-  }
+  } else player.loadVideoById(idInput.value);
 });
